@@ -6,6 +6,10 @@
 
 库在 `./data/map.json` 目录下，可以自行修改。
 
+## 示例
+
+![秃头和植发](static/example.png)
+
 ## 依赖
 
 > 没有为 Windows 测试（不过改改就能用）
