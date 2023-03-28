@@ -38,5 +38,5 @@ do
     python3 scripts/record.py --output $audio_file
     python3 scripts/convert.py $audio_file
     echo Sleeping...
-    sleep 5
+    sleep 1
 done
