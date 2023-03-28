@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # Author: Thoxvi <Dev@Thoxvi.com>
 
-
 import click
 from rich.console import Console
 
