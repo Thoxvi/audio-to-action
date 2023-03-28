@@ -21,7 +21,8 @@ console = Console()
 def conversion(api_key, api_base, audio_file_path, language, map_file, prompts_file):
     adapter = OpenAIAdapter(api_key, api_base)
     text = adapter.audio2text(audio_file_path, language)
-    if not text:
+    if text is None:
+        console.print("Transcription failed", style="bold red")
         sys.exit(1)
 
     console.print(f"Transcribed text: {text}", style="bold green")

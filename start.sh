@@ -31,12 +31,12 @@ pip install -r requirements.txt
 clear
 
 # Main
-set -e
 audio_file=cache/audio.mp3
 while true;
 do
     rm -f $audio_file
     python3 scripts/record.py --output $audio_file
     python3 scripts/convert.py $audio_file
+    echo Sleeping...
     sleep 5
 done
