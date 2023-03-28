@@ -46,11 +46,11 @@ class OpenAIAdapter:
             )
             return None
 
-    def text2value(self, text) -> Optional[str]:
-        with open("map.json", "r") as f:
+    def text2value(self, text, prompts_file, map_file) -> Optional[str]:
+        with open(map_file, "r") as f:
             map = f.read()
 
-        with open("prompts.txt", "r") as f:
+        with open(prompts_file, "r") as f:
             prompts = f.read().format(map=map)
         try:
             completion = openai.ChatCompletion.create(
