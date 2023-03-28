@@ -40,6 +40,11 @@ sudo yum install ffmpeg
 
 ## 简单脚本使用方法
 
+配置环境变量
+
+- OPENAI_API_KEY
+- OPENAI_API_BASE [可选] 例如 `https://api.openai.com/v1/`
+
 ```bash
 bash ./start.sh
 ```

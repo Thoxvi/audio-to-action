@@ -4,6 +4,12 @@
 cd "$(dirname "$0")"
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 
+# Check OPENAI_API_KEY
+if [ -z "$OPENAI_API_KEY" ]; then
+    echo "OPENAI_API_KEY not found"
+    exit 1
+fi
+
 # Check ffmpeg
 if ! which ffmpeg &> /dev/null; then
     echo "ffmpeg not found"
