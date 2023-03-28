@@ -1,0 +1,6 @@
+openai~=0.27
+rich~=13.0
+click~=8.0
+pydub~=0.25
+sounddevice~=0.4
+numpy~=1.24
