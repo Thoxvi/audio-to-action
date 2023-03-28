@@ -23,7 +23,6 @@ class OpenAIAdapter:
             console.print(
                 "Please provide an API key",
                 style="bold red",
-                err=True
             )
             sys.exit(1)
 
@@ -47,7 +46,6 @@ class OpenAIAdapter:
             console.print(
                 f"Error while transcribing audio: {err}",
                 style="bold red",
-                err=True
             )
             return None
 
@@ -78,6 +76,5 @@ class OpenAIAdapter:
             console.print(
                 f"Error while transcribing audio: {err}",
                 style="bold red",
-                err=True
             )
             return None
