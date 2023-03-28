@@ -8,6 +8,7 @@ from typing import Optional
 
 import openai
 
+from openai.error import OpenAIError
 from rich.console import Console
 
 __all__ = [

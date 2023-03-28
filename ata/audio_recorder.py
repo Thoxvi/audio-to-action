@@ -21,7 +21,7 @@ class AudioRecorder:
         sample_rate=44100,
         channels=1,
         duration=10,
-        threshold=0.1,
+        threshold=0.3,
         window_duration=1,
         print_interval=0.5
     ):
