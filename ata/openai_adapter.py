@@ -46,7 +46,7 @@ class OpenAIAdapter:
             )
             return None
 
-    def text2value(text) -> Optional[str]:
+    def text2value(self, text) -> Optional[str]:
         with open("map.json", "r") as f:
             map = f.read()
 
