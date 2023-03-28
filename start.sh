@@ -32,9 +32,11 @@ clear
 
 # Main
 set -e
+audio_file=cache/audio.mp3
 while true;
 do
-    python3 scripts/record.py --output cache/audio.mp3
-    python3 scripts/convert.py cache/audio.mp3
+    rm -f $audio_file
+    python3 scripts/record.py --output $audio_file
+    python3 scripts/convert.py $audio_file
     sleep 5
 done
