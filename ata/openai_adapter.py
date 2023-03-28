@@ -26,9 +26,6 @@ class OpenAIAdapter:
             )
             sys.exit(1)
 
-        self.api_key = api_key
-        self.api_base = api_base
-
         openai.api_key = api_key
         if api_base:
             openai.api_base = api_base
